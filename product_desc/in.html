@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="in.css" />
+    <link rel="icon" href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Shopping Site for Mobiles</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_Container">
+            <div class="logo">
+                <img
+                    src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" />
+            </div>
+            <div class="explore">
+                <a href="/plus">
+                    <p>Explore <span class="plus-icon">Plus</span></p>
+                    <img
+                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" />
+                </a>
+            </div>
+        </div>
+
+        <div class="search_container" style="border-radius: 20px;">
+            <form id="search_form">
+                <input type="text" placeholder="Search for products brands and more" id="search_input" />
+            </form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="loginBtn_container" style="border-radius: 20px;">
+            <a href="http://localhost/login/login.php">Login</a>
+            <div class="login_menu">
+                <div class="login_menu_list">
+                    <div class="login_menu_top">
+                        <p>New Customer?</p>
+                        <a href="file:///D:/Documents/login_page/login.html">Sign Up</a>
+                    </div>
+                    <div class="menu_nav_link">
+                        <a href="/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <p>My Profile</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/plusBlue.svg" class="menu_nav_icon" />
+                            <p>Flipkart plus zone</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/orderIcon.svg" class="menu_nav_icon" />
+                            <p>Order</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/wishlistIcon.svg" class="menu_nav_icon" />
+                            <p>Wishlist</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/rewardIcon.svg" class="menu_nav_icon" />
+                            <p>Rewards</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/giftIcon.svg" class="menu_nav_icon" />
+                            <p>Gift Cards</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="nav-link" href="/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect" style="text-decoration: none;">
+            Become a Seller
+        </a>
+
+        <div class="more_link">
+            More
+            <i class="fa-solid fa-angle-down icon_more"></i>
+            <div class="more_menu">
+                <div class="more_menu_list">
+
+                    <a href="/communication-preferences/push?t=all">
+                        <img src="./icon/notificationIcon.svg" class="menu_nav_icon" />
+                        <p>Notification Preferences</p>
+                    </a>
+                    <a href="/helpcentre">
+                        <img src="./icon/customerIcon.svg" class="menu_nav_icon" />
+                        <p>24 X 7 Customer Care</p>
+                    </a>
+                    <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header">
+                        <img src="./icon/advertiseIcon.svg" class="menu_nav_icon" />
+                        <p>Advertise</p>
+                    </a>
+                    <a href="/mobile-apps?otracker=ch_vn_mobile_apps">
+                        <img src="./icon/downloadIcon.svg" class="menu_nav_icon" />
+                        <p>Download App</p>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <a href="/viewcart?exploreMode=true&preference=FLIPKART">
+            <div class="card_link ci">
+                <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
+                <p><a href="" style="color: white; text-decoration: none;">Cart</a></p>
+            </div>
+        </a>
+
+    </header>
+
+    <div class="roww1">
+        <div class="col-sm-2">
+            <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+                <b>Electronics</b>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Desktop PCs</a></li>
+                <li><a href="#">Camera Accessories</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+                <b>TVs & Appliance</b>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Smart & Ultra HD</a></li>
+                <li><a href="#">Air Conditioners</a></li>
+                <li><a href="#">Small Home Appliance</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+                <b>Men</b>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Fabrics</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+                <b>Women</b>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Ethinic Wear</a></li>
+                <li><a href="#">Beauty & Grooming</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+                <b>Baby & Kids</b>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Baby Care</a></li>
+                <li><a href="#">School Suplies</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+                <b>Sports,Books & More</b>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-block" aria-expanded="true" style="background-color:#fff;">
+                <b><a href="https://www.flipkart.com/travel/flights?otracker=nmenu_Flights" style="color: black;">Flights</a></b></button>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-block" aria-expanded="true" style="background-color:#fff;">
+                <b><a href="https://www.flipkart.com/offers-store?otracker=nmenu_offer-zone" style="color: black;">Offer Zone</a></b></button>
+        </div>
+    </div>
+    <!-- watch desc -->
+    </div>
+    <div class="secton">
+        <div class="row">
+            <div class="col-sm-5 s5">
+                <div class="thumbnail t1">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/jw9ke4w0/watch-refurbished/4/4/k/c-ex222-casio-original-imafdcj94vzdqz6n.jpeg?q=70"
+                        alt="" />
+                </div>
+                <div class="caption ab1">
+                    <div class="row buttons rb">
+
+                        <button class="btn  col-sm-4 col-sm-offset-2 btn-lg"
+                            style="background-color:#ff9f00; color:#fff;font-size:1em;"><span
+                                class="glyphicon glyphicon-shopping-cart" style="color: white;">
+                            </span>&nbsp;
+                            <a href="file:///D:/Documents/product_listing_add_remove/index.html" style="color: white; text-decoration: none;">
+                                ADD TO CART
+                            </a>
+                        </button>
+
+
+                        <button class="btn col-sm-4 col-sm-offset-1 btn-lg"
+                            style="background-color:#fb641b; color:#fff;font-size:1em;"><i class="fa fa-bolt"
+                                style="font-size:1.2em;"></i> BUY NOW</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product Description -->
+            <div class="col-sm-7 desc">
+
+                <div>
+
+                    <ol class="breadcrumb col-sm-12" style="background-color:transparent;">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="">Wrist Watches</a></li>
+                        <li><a href="">CASIO Wrist Watches</a></li>
+                        <li class="active">EFR-539SG-7A5VUDF</li>
+                    </ol>
+
+                    <h3><b>Edifice ( EFR-539SG-7A5VUDF ) Analog Watch - For Men EX222</b></h3>
+
+                    <div>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;<b>60,400</b>&nbsp;
+                            <i class="fa-solid fa-circle-info" style="font-size: medium; opacity: 0.5;"></i>
+                        </h3>
+                    </div>
+
+                    <div class="rowrating">
+                        <div class="col-sm-2">
+                            <span class="label label-success ratingicon">4.8 <span class="glyphicon glyphicon-star"
+                                    style="color: navajowhite;"></span></span>
+                        </div>
+
+                        <div class="col-sm-5" style="font-weight: bold; color:gray;">
+                            2,421 Ratings & 1000 Reviews
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <h5><b>Available Offers</b></h5>
+                    </div>
+
+                    <div>
+                        <h5><span class="glyphicon glyphicon-tag"></span><strong> Bank Offer</strong> Flat ₹1,250
+                            Off on HDFC Bank Credit Card EMI Trxns on orders priced between ₹15,000 to ₹39,999 <a
+                                href=""><b>T&C</b></a>
+                            <h5><span class="glyphicon glyphicon-tag"></span><strong> Bank Offer</strong> Flat
+                                ₹3,000 Off on HDFC Bank Credit Card EMI Trxns on orders priced between ₹40,000 to
+                                ₹49,999 <a href=""><b>T&C</b></a>
+                                <h5><span class="glyphicon glyphicon-tag"></span> Extra ₹500 Off on Bikes & Scooters
+                                    on purchase of ₹30,000 or more <a href=""><b>T&C</b></a>
+                                    <h5><span class="glyphicon glyphicon-tag"></span><strong> Partner Offer</strong>
+                                        Apply & get ₹10,000 Times Prime benefits + ₹1,000 Gift Card* with Flipkart
+                                        Axis Bank Credit Card <a href=""><b>Know More</b></a>
+                                        <h5><span class="glyphicon glyphicon-tag"></span><strong> No cost EMI
+                                                ₹3,999/month</strong> Standard EMI also available <a href="">View
+                                                Plans</a></h5>
+                                        <h5><span class="glyphicon glyphicon-tag"></span><strong> Partner
+                                                Offer</strong> Sign-up for Flipkart Pay Later & get free Times Prime
+                                            Benefits worth ₹10,000* <a href=""><b>Know More</b></a>
+                                            <h5><span class="glyphicon glyphicon-tag"></span><strong> Bank
+                                                    Offer</strong> 5% Instant Discount on Visa Cards for First 3
+                                                Online Payments. <a href="">T&C</a></h5>
+                                            <h5><span class="glyphicon glyphicon-calendar"></span> EMIs from
+                                                <strong>Rs 3,070/month </strong><a href="">View Plans <i
+                                                        class="fa fa-chevron-right"></i></a>
+                                            </h5>
+                                            <h5>
+                                                <a href="" style="font-weight: bold; margin-left: 20px;">+3 more
+                                                    offers</a>
+                                            </h5>
+
+                    </div>
+                    <br>
+                    <div class="row1">
+                        <div class="col-sm-3">
+                            <img src="https://rukminim2.flixcart.com/image/160/160/prod-fk-cms-brand-images/ba995d26e20aaf9eada7e40379c0505b2c99ec6f6ee321e80aa2df5b6c248f07.jpg?q=90"
+                                alt="">
+                        </div>
+
+                        <div class="col-sm-9">
+
+                            <h5>2 Years All India Manufacturer Warranty <a href="">Know More</a></h5>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="rowww " id="delivery-location" style="display: flex;align-items: flex-start; margin-top: 4%;">
+                        <div class=" row col-xs-4"
+                            style="border:0px;border-bottom:1px solid #2874f0;position:relative; left:4%; font-weight: bold;">
+                            <span class="glyphicon glyphicon-map-marker col-xs-1"
+                                style="color:#2874f0;padding-left:0;margin-left:0;"></span>
+                            <input type="text" placeholder="Enter Pincode"
+                                style="border:none;padding-right:0; font-weight: normal;" class="col-xs-7">
+                            <a href=" " class="col-xs-1"
+                                style="padding-left:0;text-decoration:none; font-weight: bold; color: grey;">Check</a>
+                        </div>
+                    </div>
+                    <div class="com" style="display: flex; margin-top: 6%;">
+                        <div id="delivery-time" style="position:relative; width: 100%; margin-top: 3%;">
+                            <h5><b>Delivery in between 4 days</b>&nbsp;|&nbsp;&nbsp;<a href=""
+                                    style="color: #32CD32; font-weight: bold;">Free</a>&nbsp;<b
+                                    style="font-weight: lighter; text-decoration: line-through;">40</b><br><br>
+                                if ordered before 3:28 AM
+                            </h5>
+                            <br><br>
+                        </div>
+                        <div class="_3ywSr_" style="padding-top: 0%; margin-left: 5%;">
+                            <div class="_1bEAQy _2iN8uD _312yBx" style="padding-top: 0%;"><img class="_2OHU_q aA9eLq"
+                                    alt=""
+                                    src="https://rukminim2.flixcart.com/lockin/400/400/images/CCO__PP_2019-07-14.png?q=50"><img
+                                    class="kJjFO0 _3DIhEh"
+                                    src="https://rukminim2.flixcart.com/lockin/100/100/images/CCO__PP_2019-07-14.png?q=50"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper-body">
+
+        <div class="wrapper">
+            <h2><b>Similar product</b></h2>
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch1.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>Multi-function Champagne Dial Analog Watch - For Men GW0059G2</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch2.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>EMPORIO ARMANI Analog Watch - For Men AR60037</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;"> <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"
+                                        style="font-size: small;"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch3.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>Titan Edge Squircle Analog Watch - For Men 1841NC01</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/sc-watch4.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>LEE COOPER Analog Watch - For Men LC07368.460</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch5.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>DIESEL Split Analog Watch - For Men DZ4589</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch6.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>G-Shock Bluetooth Connect Analog-Digital Watch - For Men G1274 (GST-B400GB-1A9DR)</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch7.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>Strand By Obaku Montane Bronze Analog Watch - For Men S737GCNNVN_A</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch8.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>FOSSIL Townsman Analog Watch - For Men ME3210</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img\sc-watch9.jpeg" alt="img"></div>
+                    <div class="watch">
+
+                        <h2>Hugo #Expose Analog Watch - For Men 1530240</h2>
+                        <div class="all-item">
+                            <div> <span class="label label-success ratingicon">4.8 <span
+                                        class="glyphicon glyphicon-star" style="color: navajowhite;"></span></span>
+                                <span class="_2_R_DZ">(492)</span>
+                            </div>
+                            <div style="width: 100px;">
+                                <span class="_32g5_j _17CuXs"><img width="10" src="img\f1.png"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="all-item1">
+                            <div class="_30jeq3">₹8,795<span class="_3I9_wc">₹4,495</span></div>
+
+                            <div class="_3Ay6Sb"><span>16% off</span></div>
+                        </div>
+
+
+
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+
+    <footer>
+        <div class="m-t-3"></div>
+        <footer class="mainfooter" role="contentinfo">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h6><b>Help</b></h6>
+                                <address>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Payments</a></li>
+                                        <hr>
+                                        <li><a href="#">Shipping</a></li>
+                                        <hr>
+                                        <li><a href="#">Cancellation & Returns</a></li>
+                                        <hr>
+                                        <li><a href="#">FAQ</a></li>
+                                        <hr>
+                                        <li><a href="#">Report Infringement</a></li>
+
+                                    </ul>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h6><b>Flipcart</b></h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Contact Us</a></li>
+                                    <hr>
+                                    <li><a href="#">About Us</a></li>
+                                    <hr>
+                                    <li><a href="#">Careers</a></li>
+                                    <hr>
+                                    <li><a href="#">Flipkart Stories</a></li>
+                                    <hr>
+                                    <li><a href="#">Press</a></li>
+                                    <hr>
+                                    <li><a href="">Sell On Flipkart</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h6><b>Misc</b></h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Online Shopping</a></li>
+                                    <hr>
+                                    <li><a href="#">Affiliate Program</a></li>
+                                    <hr>
+                                    <li><a href="#">Gift Card</a></li>
+                                    <hr>
+                                    <li><a href="#">Flipkart First Subscription</a></li>
+                                    <hr>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm" id="footer_g1"><i class="fas fa-map-marker"></i>
+                            TRACK YOUR <br> ORDER
+                        </div>
+                        <div class="col-sm" id="footer_g1"><i class="fas fa-sync"></i>
+                            FREE AND EASY <br>RETURNS
+                        </div>
+                        <div class="col-sm" id="footer_g1"><i class="far fa-times-circle"></i>
+                            ONLINE <br>CANCELLATIONS
+                        </div>
+                    </div>
+                    <div class="row" id="footer-kip">
+                        <div class="col-sm-8">
+                            <span>
+                                <span class="policies-title">Policies: </span>
+                                <a class="po" href="#" target="_blank" rel="noopener noreferrer">Returns Policy</a>
+                                <a class="po" href="#" target="_blank" rel="noopener noreferrer">Terms of use</a>
+                                <a class="po" href="#" target="_blank" rel="noopener noreferrer">Security</a>
+                                <a class="po" href="#" target="_blank" rel="noopener noreferrer">Privacy</a>
+                                <a class="po" href="#" target="_blank" rel="noopener noreferrer">Infringement</a>
+                            </span>
+                            <span class="_2tFDQF">© 2007-<!-- -->2018<!-- -->
+                                <span class="">Flipkart.com.</span>
+                            </span>
+                        </div>
+                        <div class="col-sm-4">
+                            <span class="">Keep in touch</span>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-google-plus-square"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 contact-border" id="contact-div">
+                            <h6 id="contact-1">Mail Us:</h6>
+                            <ul>
+                                <li id="contact-2">Flipkart Internet Pvt Ltd Block B (Begonia),</li>
+                                <li id="contact-2">Ground Floor, Embassy Tech Village,</li>
+                                <li id="contact-2">Outer Ring Road, Devarabeesanahalli Village,</li>
+                                <li id="contact-2">Varthur Hobli, Bengaluru East Taluk,</li>
+                                <li id="contact-2">Bengaluru District,</li>
+                                <li id="contact-2">Karnataka, India, 560103.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6" id="contact-div">
+                            <h6 id="contact-1">Registered Office Address:</h6>
+                            <ul>
+                                <li id="contact-2">Flipkart Internet Private Limited,</li>
+                                <li id="contact-2">Vaishnavi Summit, Ground Floor, 7th Main,</li>
+                                <li id="contact-2">80 Feet Road, 3rd Block,</li>
+                                <li id="contact-2">Koramangala,</li>
+                                <li id="contact-2">Bengaluru - 560034</li>
+                                <li id="contact-2">India</li>
+                                <li id="contact-2">CIN : U51109KA2012PTC066107</li>
+                                <li id="contact-2">Telephone: 1800 208 9898</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-notes">
+                        <h6 id="footer-notes-h">Online Shopping in India</h6>
+                        <p id="footer-notes-c">Clothes, electronics, accessories - whatever your need for the hour
+                            maybe, Flipkart, your favorite online shopping site, is sure to spoil you with a wide range
+                            of products. You don't have to wait for the weekends to shop as you can shop online on your
+                            way back home after work. Almost all popular brands across categories sell their products
+                            online, thereby bringing you closer to your preferences. Oh, and let's not forget about the
+                            various discounts on these products which make them an offer that is too hard to resist. So,
+                            are you all set to head online and shop? Let's take a look at what Flipkart has in store for
+                            you, shall we?</p>
+                        <h6 id="footer-notes-h">Buy Electronics Online at Attractive Prices</h6>
+                        <p id="footer-notes-c">Appliances have become an integral aspect of managing your home. Take a
+                            walk through your home and you would know the number of appliances we use to help with our
+                            day-to-day activities. Just like how Joey points out in the popular sitcom Friends, all your
+                            furniture in your living room would be pointed towards the television. A walk into the
+                            kitchen and the work area would give you a glimpse into the importance of having a washing
+                            machine, a refrigerator and small appliances, such as a microwave oven, at your disposal.
+                            You no longer have to head to a store as you can buy electronics from Flipkart at delightful
+                            prices. Choose from an enticing range of products from popular brands such as Sony, Samsung,
+                            Philips, Apple and Xiaomi. What's more? You can have these products delivered to your
+                            doorstep. Some of the popular appliances that you can buy online include home theaters from
+                            Sony, audio players from Samsung, speakers from JBL and video accessories from Philips.
+                            That's not all, you also get to buy mobile phones online at great prices. Pick from a wide
+                            selection of smartphones which include popular Android phones, such as the Samsung S9 and
+                            the Redmi Note 5 and the range of Apple iPhones. All you have to do is open the Flipkart
+                            page, type the product of your choice and hit the search button. You'll then be exposed to a
+                            wide range of products to choose from.</p>
+                        <h6 id="footer-notes-h">Buy Clothes and Accessories Online - Variety at Your Fingertips</h6>
+                        <p id="footer-notes-c">Jewelry, shirts, T-shirts, trousers, handbags - name it and you will be
+                            spoilt for choice with a wide variety as you shop for accessories and clothes online. Go
+                            online shopping and pick from a wide range of products from your favorite brands which
+                            include United Colors of Benetton, Roadster, Woodlands, Wildcraft, Forever 21, Nike and
+                            more. While the men can choose from a large collection of apparels, footwear, accessories,
+                            and watches, the women can shop till they drop from the exhaustive range of kurtis, jewelry,
+                            ethnic wear and grooming products online. You can find a wide collection of apparel for
+                            children too.</p>
+                        <h6 id="footer-notes-h">Buy Home and Furniture Items Online - Everything You Would Need for a
+                            Beautiful Pad</h6>
+                        <p id="footer-notes-c">A home looks complete when it is organized with different pieces of
+                            furniture that go with the decor. Don't compromise on your home decor as you can choose from
+                            an exhilarating range of home furnishing products online. From dining tables and sofa sets,
+                            to colorful bedsheets and intricate wall-clocks, you can find everything you need online.
+                            And the best part is, you can add all your preferred products to your cart and order them in
+                            one go. You also have the freedom to pay for the products from any of the payment methods
+                            available on the site. Some of the popular modes of payment include credit/debit card and
+                            cash on delivery.</p>
+                        <h6 id="footer-notes-h">History, Fiction, Fantasy - Buy Your Favorite Books Online</h6>
+                        <p id="footer-notes-c">Reading is a great way to expand your knowledge and enhance your
+                            creativity. While the works of RK Narayan or Durjoy Datta would take you through relatable
+                            emotions via interesting characters and situations, authors like JK Rowling and Stephen King
+                            have successfully given us a glimpse into an entirely different world brimming of magic and
+                            surrealism. Head to your favorite online shopping site and get set to be spoilt for choice
+                            with the variety of books which are available at your disposal. From a huge collection of
+                            bestsellers to hardbound copies of your favorite modern-day classics like Harry Potter,
+                            there are a number of stories to be read and explored across various genres. That's not all,
+                            you can also shop online for study materials to help you score better in competitive
+                            examinations. Whether you need a textbook to help you understand the basic concepts better
+                            or a study guide that has a solution to all your queries, you have access to some of the
+                            best study materials online. Flipkart has a wide range of books across categories such as
+                            children's books, audiobooks, computer books, cookery books, and handy guides. So, go ahead,
+                            order copies of your favorite books online and immerse yourself in a world with characters
+                            that stay with you, through thick and thin.</p>
+                        <h6 id="footer-notes-h">Buying Guides - Your Assistants in Helping You Buy the Most Suitable
+                            Products</h6>
+                        <p id="footer-notes-c">Sometimes, it can get a little overwhelming when you are exposed to a
+                            wide range of products. That's where the buying guides would come to your rescue. Flipkart
+                            has a set of guides that are specially curated to help you buy the right product across
+                            various categories. For example, if you would like to buy mobile phones online and are
+                            confused about what to pick, all you have to do is to click on the buying guide option. The
+                            guide will take you through the most important points to look for while buying a phone. You
+                            can also have a glance at the various reviews of the products posted by previous buyers that
+                            may help you make an informed buying decision. Convenient and simple, shop for your favorite
+                            appliances, gifts, and products online at Flipkart and let them arrive at your doorstep -
+                            one parcel at a time with a cheerful smile.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
