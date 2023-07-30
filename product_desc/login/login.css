@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("fi.jpg");
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    height: 480px;
+    width: 902px;
+    margin: 0px 0px 0px 110px;
+    background-color: #fff;
+    box-shadow: 0px 8px 15px 3px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* filter: drop-shadow(7px 10px 5px 5px lightgrey); */
+  }
+  .fpage{
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+  }
+  img{
+    width: auto;
+    max-height: 520px;
+  }
+  
+  
+  h1 {
+    margin: 13px 0px 30px 0px;
+  }
+
+
+  h6{
+    color: grey;
+  }
+  
+  
+  .input-container {
+    margin-bottom: 20px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    
+  }
+
+  .input-container i {
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 85%;
+    font-size: large;
+  }
+  i{
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 350px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    
+  }
+
+  .form-control{
+    display: block;
+    width: 97%;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85);
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+    padding: 6px 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    border-radius: 50px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  }
+
+  .unpwd{
+    margin-top: 50px;
+  }
+  
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .lf{
+    display: flex;
+    width: 94%;
+    justify-content: space-evenly;
+  }
+  .log{
+    width: 150px;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    border-width: thin;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 50px;
+    filter: drop-shadow(7px 10px 5px grey);
+  }
+  .sign{
+    width: 150px;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+    border-image: initial;
+    border-radius: 50px;
+  }
+  .b2{
+    color: red;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: transparent;
+
+  }
+  
+  .fp{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btm{
+    display: flex;
+    margin-top: 50px;
+    font-size: 11px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+.fa{
+  font-size: small;
+}
